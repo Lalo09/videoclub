@@ -149,6 +149,7 @@ Partial Class FormClientes
         Me.lbl_id.Size = New System.Drawing.Size(0, 15)
         Me.lbl_id.TabIndex = 10
         Me.lbl_id.Visible = False
+
         '
         'gb_acciones
         '

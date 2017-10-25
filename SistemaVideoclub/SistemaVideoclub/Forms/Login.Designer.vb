@@ -44,7 +44,7 @@ Partial Class FormLogin
         Me.pb_main.Image = Global.SistemaVideoclub.My.Resources.Resources.logo
         Me.pb_main.Location = New System.Drawing.Point(95, 22)
         Me.pb_main.Name = "pb_main"
-        Me.pb_main.Size = New System.Drawing.Size(207, 105)
+        Me.pb_main.Size = New System.Drawing.Size(201, 112)
         Me.pb_main.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pb_main.TabIndex = 2
         Me.pb_main.TabStop = False
@@ -117,9 +117,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.lbl_user)
         Me.Controls.Add(Me.pb_main)
         Me.Controls.Add(Me.pb_user)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormLogin"
         Me.ShowIcon = True

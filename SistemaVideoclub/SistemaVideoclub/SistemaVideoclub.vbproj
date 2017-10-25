@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ClassCliente.vb" />
+    <Compile Include="Clases\ClassDistribuidor.vb" />
     <Compile Include="Clases\ClassSocio.vb" />
     <Compile Include="Conexion\ModuloConexion.vb" />
     <Compile Include="Forms\FormAcercaDe.Designer.vb">
@@ -190,8 +191,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Funciones\FuncionesCliente.vb" />
+    <Compile Include="Funciones\FuncionesDistribuidor.vb" />
     <Compile Include="Funciones\FuncionesGenerales.vb" />
     <Compile Include="Funciones\FuncionesSocio.vb" />
+    <Compile Include="Funciones\VariablesGlobales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -285,7 +288,9 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\fondoprincipal.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo_transparente.png" />
   </ItemGroup>

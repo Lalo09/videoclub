@@ -340,6 +340,7 @@ Partial Class FormMDI
         '
         'ToolStripStatusLabel
         '
+        Me.ToolStripStatusLabel.BackColor = System.Drawing.Color.White
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(63, 17)
         Me.ToolStripStatusLabel.Text = "Empleado:"
@@ -375,14 +376,15 @@ Partial Class FormMDI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.BackgroundImage = Global.SistemaVideoclub.My.Resources.Resources.fondo_principal2
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackgroundImage = Global.SistemaVideoclub.My.Resources.Resources.fondoprincipal
         Me.ClientSize = New System.Drawing.Size(772, 354)
         Me.Controls.Add(Me.lbl_hora)
         Me.Controls.Add(Me.lbl_fecha)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True

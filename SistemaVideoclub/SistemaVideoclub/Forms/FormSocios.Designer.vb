@@ -25,7 +25,6 @@ Partial Class FormSocios
         Me.lbl_idSocio = New System.Windows.Forms.Label()
         Me.lbl_idCliente = New System.Windows.Forms.Label()
         Me.gb_datos_del_cliente = New System.Windows.Forms.GroupBox()
-        Me.txt_idCliente = New System.Windows.Forms.TextBox()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.lbl_email = New System.Windows.Forms.Label()
         Me.txt_telefono = New System.Windows.Forms.TextBox()
@@ -67,6 +66,7 @@ Partial Class FormSocios
         Me.btn_eliminar = New System.Windows.Forms.Button()
         Me.btn_grabar = New System.Windows.Forms.Button()
         Me.ofd_foto = New System.Windows.Forms.OpenFileDialog()
+        Me.txt_idCliente = New System.Windows.Forms.TextBox()
         Me.gb_datos_del_cliente.SuspendLayout()
         Me.gb_datosContacto.SuspendLayout()
         Me.gb_fechas.SuspendLayout()
@@ -125,13 +125,6 @@ Partial Class FormSocios
         Me.gb_datos_del_cliente.TabIndex = 3
         Me.gb_datos_del_cliente.TabStop = False
         Me.gb_datos_del_cliente.Text = "Datos de cliente"
-        '
-        'txt_idCliente
-        '
-        Me.txt_idCliente.Location = New System.Drawing.Point(169, 30)
-        Me.txt_idCliente.Name = "txt_idCliente"
-        Me.txt_idCliente.Size = New System.Drawing.Size(157, 21)
-        Me.txt_idCliente.TabIndex = 0
         '
         'txt_email
         '
@@ -524,6 +517,13 @@ Partial Class FormSocios
         '
         Me.ofd_foto.FileName = "OpenFileDialog1"
         '
+        'txt_idCliente
+        '
+        Me.txt_idCliente.Location = New System.Drawing.Point(169, 30)
+        Me.txt_idCliente.Name = "txt_idCliente"
+        Me.txt_idCliente.Size = New System.Drawing.Size(157, 21)
+        Me.txt_idCliente.TabIndex = 0
+        '
         'FormSocios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -598,6 +598,6 @@ Partial Class FormSocios
     Friend WithEvents btn_eliminar As Button
     Friend WithEvents btn_grabar As Button
     Friend WithEvents btn_eliminar_foto As Button
-    Friend WithEvents txt_idCliente As TextBox
     Friend WithEvents ofd_foto As OpenFileDialog
+    Friend WithEvents txt_idCliente As TextBox
 End Class

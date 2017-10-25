@@ -37,6 +37,11 @@ SistemaVideoclub
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:SistemaVideoclub.My.Resources.Resources.fondoprincipal">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SistemaVideoclub.My.Resources.Resources.logo">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

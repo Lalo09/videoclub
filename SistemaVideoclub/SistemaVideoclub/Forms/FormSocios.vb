@@ -14,4 +14,8 @@
     Private Sub btn_eliminar_foto_Click(sender As Object, e As EventArgs) Handles btn_eliminar_foto.Click
         pb_foto_cliente.ImageLocation = ""
     End Sub
+
+    Private Sub FormSocios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbl_idCliente.Text = identificador_cliente
+    End Sub
 End Class

@@ -77,7 +77,7 @@
 
     Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
         Try
-            If lbl_id.Text > 1 Then
+            If lbl_id.Text >= 1 Then
                 cliente.id = lbl_id.Text
                 funcionesCliente.eliminar_cliente(cliente)
                 funcionesCliente.mostrar_clientes(dg_clientes)
