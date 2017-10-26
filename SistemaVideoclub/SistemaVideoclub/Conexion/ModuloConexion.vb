@@ -7,6 +7,7 @@ Module ModuloConexion
     'Variables de conexion
     Public conn As New SqlConnection(My.Settings.Conexion)
     Public cmd As New SqlCommand
+    Public dr As SqlDataReader
 
     'Funcion para conectarse a la base de datos
     Public Sub Conectar()
@@ -87,5 +88,18 @@ Module ModuloConexion
             conn.Close()
         End Try
         Return False
+    End Function
+
+    'MEtodo para extraer informacion especifica de un elemento
+    Public Function consultar_elemento(ByRef sql As String)
+        cmd.CommandText = CommandType.Text
+        cmd.Connection = conn
+        cmd.CommandText = sql
+
+        Try
+            dr = cmd.ExecuteReader()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Function
 End Module

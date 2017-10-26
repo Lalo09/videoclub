@@ -176,9 +176,14 @@ Public Class FormMDI
     End Sub
 
     Private Sub SociosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SociosToolStripMenuItem.Click
-        Dim formSocios As New FormSocios
-        formSocios.MdiParent = Me
-        formSocios.Show()
+        If socio_seleccionado <> Nothing Or identificador_cliente <> Nothing Then
+            Dim formSocios As New FormSocios
+            formSocios.MdiParent = Me
+            formSocios.Show()
+        Else
+            MsgBox("Debe seleccionar un cliente")
+        End If
+
     End Sub
 
     Private Sub RealizarCorteDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RealizarCorteDeCajaToolStripMenuItem.Click

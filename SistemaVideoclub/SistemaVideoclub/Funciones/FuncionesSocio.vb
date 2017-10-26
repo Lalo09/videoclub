@@ -18,17 +18,22 @@ Public Class FuncionesSocio
     End Sub
 
     Public Sub mostrar_socios(ByRef datagrid As DataGridView)
-        Dim consulta As String = "SELECT id_socio as 'Numero de socio',id_cliente as 'Numero de cliente', sexo as Sexo, telefono as Telefono, correo_electronico as 'Correo Electronico, calle as Calle, numero_exterior as 'Numero exterior, numero_interior as 'Numero interior, colonia as 'Colonia', ciudad as 'Ciudad', pais as 'Pais', fotografia as 'Fotografia', fecha_expedicion as 'Fecha de expedicion', fecha_vigencia as 'Fecha de vigencia', estatus as Estatus FROM socio"
+        Dim consulta As String = "SELECT id_socio as 'Numero de socio',id_cliente as 'Numero de cliente', sexo as 'Sexo', telefono as 'Telefono', correo_electronico as 'Correo Electronico', calle as 'Calle', numero_exterior as 'Numero exterior', numero_interior as 'Numero interior', colonia as 'Colonia', ciudad as 'Ciudad', pais as 'Pais', fotografia as 'Fotografia', fecha_expedicion as 'Fecha de expedicion', fecha_vigencia as 'Fecha de vigencia', estatus as 'Estatus' FROM socio"
         mostrar(consulta, datagrid)
     End Sub
 
     Public Sub buscar_socio(ByRef datagrid As DataGridView, ByRef id_socio As Integer)
-        Dim consulta As String = "SELECT id_socio as 'Numero de socio',id_cliente as 'Numero de cliente', sexo as Sexo, telefono as Telefono, correo_electronico as 'Correo Electronico, calle as Calle, numero_exterior as 'Numero exterior, numero_interior as 'Numero interior, colonia as 'Colonia', ciudad as 'Ciudad', pais as 'Pais', fotografia as 'Fotografia', fecha_expedicion as 'Fecha de expedicion', fecha_vigencia as 'Fecha de vigencia', estatus as Estatus FROM socio WHERE id_socio =" & id_socio
+        Dim consulta As String = "SELECT id_socio as 'Numero de socio', sexo as 'Sexo', telefono as 'Telefono', correo_electronico as 'Correo Electronico', calle as 'Calle', numero_exterior as 'Numero exterior', numero_interior as 'Numero interior', colonia as 'Colonia', ciudad as 'Ciudad', pais as 'Pais', fecha_expedicion as 'Fecha de expedicion', fecha_vigencia as 'Fecha de vigencia', estatus as 'Estatus' FROM socio WHERE id_socio =" & id_socio
         mostrar(consulta, datagrid)
     End Sub
 
-    Public Function existe_socio(ByVal cliente As ClassCliente)
-        Dim consulta As String = "SELECT count(*) FROM socio where id_socio = " & cliente.id
+    Public Sub buscar_socio_por_nombre(ByRef datagrid As DataGridView, ByRef nombre As String)
+        Dim consulta As String = "SELECT socio.id_socio as 'Numero de socio', socio.sexo as 'Sexo', socio.telefono as 'Telefono', socio.correo_electronico as 'Correo Electronico', socio.calle as 'Calle', socio.numero_exterior as 'Numero exterior', socio.numero_interior as 'Numero interior', socio.colonia as 'Colonia', socio.ciudad as 'Ciudad', socio.pais as 'Pais', socio.fecha_expedicion as 'Fecha de expedicion', socio.fecha_vigencia as 'Fecha de vigencia', socio.estatus as 'Estatus' FROM socio,cliente WHERE cliente.id_cliente = socio.id_cliente and cliente.nombre  Like '%" & nombre & "%'"
+        mostrar(consulta, datagrid)
+    End Sub
+
+    Public Function existe_socio(ByVal socio As ClassSocio)
+        Dim consulta As String = "SELECT count(*) FROM socio where id_socio = " & socio.id
         If (existe(consulta) = True) Then
             Return True
         Else

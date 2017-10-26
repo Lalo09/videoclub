@@ -98,4 +98,17 @@
             MsgBox("No se han podido cargar los datos: " + ex.Message)
         End Try
     End Sub
+
+    Private Sub bnt_hacer_socio_Click(sender As Object, e As EventArgs) Handles bnt_hacer_socio.Click
+
+        If lbl_id.Text <> Nothing Then
+            identificador_cliente = lbl_id.Text
+            Dim formSocios As New FormSocios
+            formSocios.Show()
+            Me.Close()
+        Else
+            MsgBox("Debe seleccionar un cliente")
+        End If
+
+    End Sub
 End Class

@@ -13,8 +13,8 @@
     Private _CIUDAD As String
     Private _PAIS As String
     Private _FOTOGRAFIA As String
-    Private _FECHAEXP As Date
-    Private _FECHAVIG As Date
+    Private _FECHAEXP As String
+    Private _FECHAVIG As String
     Private _ESTATUS As String
 
     'Metodos get y set
@@ -126,20 +126,20 @@
         End Set
     End Property
 
-    Public Property fechaExp As Date
+    Public Property fechaExp As String
         Get
             Return _FECHAEXP
         End Get
-        Set(value As Date)
+        Set(value As String)
             _FECHAEXP = value
         End Set
     End Property
 
-    Public Property fechaVig As Date
+    Public Property fechaVig As String
         Get
             Return _FECHAVIG
         End Get
-        Set(value As Date)
+        Set(value As String)
             _FECHAVIG = value
         End Set
     End Property

@@ -41,7 +41,7 @@ Partial Class FormBuscarSocios
         'btn_salir
         '
         Me.btn_salir.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_salir.Location = New System.Drawing.Point(557, 424)
+        Me.btn_salir.Location = New System.Drawing.Point(1052, 475)
         Me.btn_salir.TabIndex = 6
         '
         'gb_opciones_buscar
@@ -56,7 +56,7 @@ Partial Class FormBuscarSocios
         Me.gb_opciones_buscar.Controls.Add(Me.lbl_buscar_por)
         Me.gb_opciones_buscar.Location = New System.Drawing.Point(21, 12)
         Me.gb_opciones_buscar.Name = "gb_opciones_buscar"
-        Me.gb_opciones_buscar.Size = New System.Drawing.Size(700, 103)
+        Me.gb_opciones_buscar.Size = New System.Drawing.Size(1195, 103)
         Me.gb_opciones_buscar.TabIndex = 1
         Me.gb_opciones_buscar.TabStop = False
         '
@@ -65,9 +65,8 @@ Partial Class FormBuscarSocios
         Me.lbl_id_socio.AutoSize = True
         Me.lbl_id_socio.Location = New System.Drawing.Point(98, 27)
         Me.lbl_id_socio.Name = "lbl_id_socio"
-        Me.lbl_id_socio.Size = New System.Drawing.Size(53, 15)
+        Me.lbl_id_socio.Size = New System.Drawing.Size(0, 15)
         Me.lbl_id_socio.TabIndex = 5
-        Me.lbl_id_socio.Text = "id_socio"
         Me.lbl_id_socio.Visible = False
         '
         'btn_buscar
@@ -105,10 +104,10 @@ Partial Class FormBuscarSocios
         Me.rb_id_cliente.AutoSize = True
         Me.rb_id_cliente.Location = New System.Drawing.Point(24, 54)
         Me.rb_id_cliente.Name = "rb_id_cliente"
-        Me.rb_id_cliente.Size = New System.Drawing.Size(137, 19)
+        Me.rb_id_cliente.Size = New System.Drawing.Size(126, 19)
         Me.rb_id_cliente.TabIndex = 0
         Me.rb_id_cliente.TabStop = True
-        Me.rb_id_cliente.Text = "Numero de Cliente:"
+        Me.rb_id_cliente.Text = "Numero de socio:"
         Me.rb_id_cliente.UseVisualStyleBackColor = True
         '
         'lbl_buscar_por
@@ -122,13 +121,18 @@ Partial Class FormBuscarSocios
         '
         'dg_socios
         '
+        Me.dg_socios.AllowUserToAddRows = False
+        Me.dg_socios.AllowUserToDeleteRows = False
         Me.dg_socios.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dg_socios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dg_socios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dg_socios.Location = New System.Drawing.Point(21, 131)
         Me.dg_socios.Name = "dg_socios"
-        Me.dg_socios.Size = New System.Drawing.Size(700, 261)
+        Me.dg_socios.ReadOnly = True
+        Me.dg_socios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dg_socios.Size = New System.Drawing.Size(1195, 312)
         Me.dg_socios.TabIndex = 7
         '
         'gb_botones
@@ -136,7 +140,7 @@ Partial Class FormBuscarSocios
         Me.gb_botones.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_botones.Controls.Add(Me.btn_deshacer)
         Me.gb_botones.Controls.Add(Me.btn_seleccionar_cliente)
-        Me.gb_botones.Location = New System.Drawing.Point(21, 398)
+        Me.gb_botones.Location = New System.Drawing.Point(516, 449)
         Me.gb_botones.Name = "gb_botones"
         Me.gb_botones.Size = New System.Drawing.Size(261, 65)
         Me.gb_botones.TabIndex = 3
@@ -163,14 +167,15 @@ Partial Class FormBuscarSocios
         Me.btn_seleccionar_cliente.Name = "btn_seleccionar_cliente"
         Me.btn_seleccionar_cliente.Size = New System.Drawing.Size(120, 45)
         Me.btn_seleccionar_cliente.TabIndex = 4
-        Me.btn_seleccionar_cliente.Text = "Seleccionar cliente"
+        Me.btn_seleccionar_cliente.Text = "Seleccionar socio"
         Me.btn_seleccionar_cliente.UseVisualStyleBackColor = False
         '
         'FormBuscarSocios
         '
+        Me.AcceptButton = Me.btn_buscar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(755, 475)
+        Me.ClientSize = New System.Drawing.Size(1250, 526)
         Me.Controls.Add(Me.gb_botones)
         Me.Controls.Add(Me.dg_socios)
         Me.Controls.Add(Me.gb_opciones_buscar)

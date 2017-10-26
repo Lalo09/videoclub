@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormSocios
     Inherits FromBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,13 @@ Partial Class FormSocios
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lbl_idSocio = New System.Windows.Forms.Label()
         Me.lbl_idCliente = New System.Windows.Forms.Label()
         Me.gb_datos_del_cliente = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.lbl_email = New System.Windows.Forms.Label()
         Me.txt_telefono = New System.Windows.Forms.TextBox()
@@ -66,7 +68,7 @@ Partial Class FormSocios
         Me.btn_eliminar = New System.Windows.Forms.Button()
         Me.btn_grabar = New System.Windows.Forms.Button()
         Me.ofd_foto = New System.Windows.Forms.OpenFileDialog()
-        Me.txt_idCliente = New System.Windows.Forms.TextBox()
+        Me.btn_dar_de_baja = New System.Windows.Forms.Button()
         Me.gb_datos_del_cliente.SuspendLayout()
         Me.gb_datosContacto.SuspendLayout()
         Me.gb_fechas.SuspendLayout()
@@ -78,32 +80,31 @@ Partial Class FormSocios
         'btn_salir
         '
         Me.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btn_salir.Location = New System.Drawing.Point(880, 484)
+        Me.btn_salir.Location = New System.Drawing.Point(851, 484)
         Me.btn_salir.Size = New System.Drawing.Size(103, 32)
         Me.btn_salir.TabIndex = 22
         '
         'lbl_idSocio
         '
         Me.lbl_idSocio.AutoSize = True
-        Me.lbl_idSocio.Location = New System.Drawing.Point(55, 33)
+        Me.lbl_idSocio.Location = New System.Drawing.Point(173, 27)
         Me.lbl_idSocio.Name = "lbl_idSocio"
-        Me.lbl_idSocio.Size = New System.Drawing.Size(108, 15)
+        Me.lbl_idSocio.Size = New System.Drawing.Size(0, 15)
         Me.lbl_idSocio.TabIndex = 1
-        Me.lbl_idSocio.Text = "Numero de socio:"
         '
         'lbl_idCliente
         '
         Me.lbl_idCliente.AutoSize = True
-        Me.lbl_idCliente.Location = New System.Drawing.Point(408, 36)
+        Me.lbl_idCliente.Location = New System.Drawing.Point(496, 27)
         Me.lbl_idCliente.Name = "lbl_idCliente"
         Me.lbl_idCliente.Size = New System.Drawing.Size(61, 15)
         Me.lbl_idCliente.TabIndex = 2
         Me.lbl_idCliente.Text = "id_cliente"
-        Me.lbl_idCliente.Visible = False
         '
         'gb_datos_del_cliente
         '
-        Me.gb_datos_del_cliente.Controls.Add(Me.txt_idCliente)
+        Me.gb_datos_del_cliente.Controls.Add(Me.Label2)
+        Me.gb_datos_del_cliente.Controls.Add(Me.Label1)
         Me.gb_datos_del_cliente.Controls.Add(Me.txt_email)
         Me.gb_datos_del_cliente.Controls.Add(Me.lbl_email)
         Me.gb_datos_del_cliente.Controls.Add(Me.txt_telefono)
@@ -121,14 +122,32 @@ Partial Class FormSocios
         Me.gb_datos_del_cliente.Controls.Add(Me.lbl_nombre)
         Me.gb_datos_del_cliente.Location = New System.Drawing.Point(21, 27)
         Me.gb_datos_del_cliente.Name = "gb_datos_del_cliente"
-        Me.gb_datos_del_cliente.Size = New System.Drawing.Size(702, 220)
+        Me.gb_datos_del_cliente.Size = New System.Drawing.Size(738, 220)
         Me.gb_datos_del_cliente.TabIndex = 3
         Me.gb_datos_del_cliente.TabStop = False
         Me.gb_datos_del_cliente.Text = "Datos de cliente"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(374, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(116, 15)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Numero de cliente:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(64, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(108, 15)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Numero de socio:"
+        '
         'txt_email
         '
-        Me.txt_email.Location = New System.Drawing.Point(477, 181)
+        Me.txt_email.Location = New System.Drawing.Point(482, 170)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(169, 21)
         Me.txt_email.TabIndex = 7
@@ -136,7 +155,7 @@ Partial Class FormSocios
         'lbl_email
         '
         Me.lbl_email.AutoSize = True
-        Me.lbl_email.Location = New System.Drawing.Point(357, 184)
+        Me.lbl_email.Location = New System.Drawing.Point(362, 173)
         Me.lbl_email.Name = "lbl_email"
         Me.lbl_email.Size = New System.Drawing.Size(118, 15)
         Me.lbl_email.TabIndex = 25
@@ -144,7 +163,7 @@ Partial Class FormSocios
         '
         'txt_telefono
         '
-        Me.txt_telefono.Location = New System.Drawing.Point(455, 127)
+        Me.txt_telefono.Location = New System.Drawing.Point(460, 116)
         Me.txt_telefono.Name = "txt_telefono"
         Me.txt_telefono.Size = New System.Drawing.Size(191, 21)
         Me.txt_telefono.TabIndex = 6
@@ -152,7 +171,7 @@ Partial Class FormSocios
         'lbl_telefono
         '
         Me.lbl_telefono.AutoSize = True
-        Me.lbl_telefono.Location = New System.Drawing.Point(388, 130)
+        Me.lbl_telefono.Location = New System.Drawing.Point(393, 119)
         Me.lbl_telefono.Name = "lbl_telefono"
         Me.lbl_telefono.Size = New System.Drawing.Size(61, 15)
         Me.lbl_telefono.TabIndex = 23
@@ -161,7 +180,7 @@ Partial Class FormSocios
         'rb_masculino
         '
         Me.rb_masculino.AutoSize = True
-        Me.rb_masculino.Location = New System.Drawing.Point(566, 85)
+        Me.rb_masculino.Location = New System.Drawing.Point(571, 74)
         Me.rb_masculino.Name = "rb_masculino"
         Me.rb_masculino.Size = New System.Drawing.Size(80, 19)
         Me.rb_masculino.TabIndex = 5
@@ -172,7 +191,7 @@ Partial Class FormSocios
         'rb_femenino
         '
         Me.rb_femenino.AutoSize = True
-        Me.rb_femenino.Location = New System.Drawing.Point(465, 85)
+        Me.rb_femenino.Location = New System.Drawing.Point(470, 74)
         Me.rb_femenino.Name = "rb_femenino"
         Me.rb_femenino.Size = New System.Drawing.Size(80, 19)
         Me.rb_femenino.TabIndex = 4
@@ -183,7 +202,7 @@ Partial Class FormSocios
         'lbl_sexo
         '
         Me.lbl_sexo.AutoSize = True
-        Me.lbl_sexo.Location = New System.Drawing.Point(408, 85)
+        Me.lbl_sexo.Location = New System.Drawing.Point(413, 74)
         Me.lbl_sexo.Name = "lbl_sexo"
         Me.lbl_sexo.Size = New System.Drawing.Size(41, 15)
         Me.lbl_sexo.TabIndex = 20
@@ -191,7 +210,7 @@ Partial Class FormSocios
         '
         'txt_ap_materno
         '
-        Me.txt_ap_materno.Location = New System.Drawing.Point(171, 181)
+        Me.txt_ap_materno.Location = New System.Drawing.Point(176, 170)
         Me.txt_ap_materno.Name = "txt_ap_materno"
         Me.txt_ap_materno.ReadOnly = True
         Me.txt_ap_materno.Size = New System.Drawing.Size(155, 21)
@@ -199,7 +218,7 @@ Partial Class FormSocios
         '
         'txt_ap_paterno
         '
-        Me.txt_ap_paterno.Location = New System.Drawing.Point(171, 130)
+        Me.txt_ap_paterno.Location = New System.Drawing.Point(176, 119)
         Me.txt_ap_paterno.Name = "txt_ap_paterno"
         Me.txt_ap_paterno.ReadOnly = True
         Me.txt_ap_paterno.Size = New System.Drawing.Size(155, 21)
@@ -207,7 +226,7 @@ Partial Class FormSocios
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(138, 83)
+        Me.txt_nombre.Location = New System.Drawing.Point(143, 72)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.ReadOnly = True
         Me.txt_nombre.Size = New System.Drawing.Size(188, 21)
@@ -216,7 +235,7 @@ Partial Class FormSocios
         'lbl_ap_materno
         '
         Me.lbl_ap_materno.AutoSize = True
-        Me.lbl_ap_materno.Location = New System.Drawing.Point(58, 184)
+        Me.lbl_ap_materno.Location = New System.Drawing.Point(63, 173)
         Me.lbl_ap_materno.Name = "lbl_ap_materno"
         Me.lbl_ap_materno.Size = New System.Drawing.Size(109, 15)
         Me.lbl_ap_materno.TabIndex = 19
@@ -225,7 +244,7 @@ Partial Class FormSocios
         'lbl_ap_paterno
         '
         Me.lbl_ap_paterno.AutoSize = True
-        Me.lbl_ap_paterno.Location = New System.Drawing.Point(58, 133)
+        Me.lbl_ap_paterno.Location = New System.Drawing.Point(63, 122)
         Me.lbl_ap_paterno.Name = "lbl_ap_paterno"
         Me.lbl_ap_paterno.Size = New System.Drawing.Size(105, 15)
         Me.lbl_ap_paterno.TabIndex = 18
@@ -234,7 +253,7 @@ Partial Class FormSocios
         'lbl_nombre
         '
         Me.lbl_nombre.AutoSize = True
-        Me.lbl_nombre.Location = New System.Drawing.Point(57, 85)
+        Me.lbl_nombre.Location = New System.Drawing.Point(62, 74)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(75, 15)
         Me.lbl_nombre.TabIndex = 17
@@ -256,7 +275,7 @@ Partial Class FormSocios
         Me.gb_datosContacto.Controls.Add(Me.lbl_calle)
         Me.gb_datosContacto.Location = New System.Drawing.Point(21, 253)
         Me.gb_datosContacto.Name = "gb_datosContacto"
-        Me.gb_datosContacto.Size = New System.Drawing.Size(702, 117)
+        Me.gb_datosContacto.Size = New System.Drawing.Size(738, 117)
         Me.gb_datosContacto.TabIndex = 4
         Me.gb_datosContacto.TabStop = False
         Me.gb_datosContacto.Text = "Datos de contacto"
@@ -362,43 +381,46 @@ Partial Class FormSocios
         Me.gb_fechas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.gb_fechas.Controls.Add(Me.btn_dar_de_baja)
         Me.gb_fechas.Controls.Add(Me.dt_ven)
         Me.gb_fechas.Controls.Add(Me.lbl_fecha_ven)
         Me.gb_fechas.Controls.Add(Me.dt_exp)
         Me.gb_fechas.Controls.Add(Me.lbl_fecha_ex)
         Me.gb_fechas.Location = New System.Drawing.Point(15, 376)
         Me.gb_fechas.Name = "gb_fechas"
-        Me.gb_fechas.Size = New System.Drawing.Size(983, 79)
+        Me.gb_fechas.Size = New System.Drawing.Size(983, 80)
         Me.gb_fechas.TabIndex = 5
         Me.gb_fechas.TabStop = False
         '
         'dt_ven
         '
-        Me.dt_ven.Location = New System.Drawing.Point(663, 28)
+        Me.dt_ven.CustomFormat = "dd MM yyyy"
+        Me.dt_ven.Location = New System.Drawing.Point(552, 34)
         Me.dt_ven.Name = "dt_ven"
-        Me.dt_ven.Size = New System.Drawing.Size(200, 21)
+        Me.dt_ven.Size = New System.Drawing.Size(253, 21)
         Me.dt_ven.TabIndex = 17
         '
         'lbl_fecha_ven
         '
         Me.lbl_fecha_ven.AutoSize = True
-        Me.lbl_fecha_ven.Location = New System.Drawing.Point(521, 29)
+        Me.lbl_fecha_ven.Location = New System.Drawing.Point(410, 35)
         Me.lbl_fecha_ven.Name = "lbl_fecha_ven"
-        Me.lbl_fecha_ven.Size = New System.Drawing.Size(136, 30)
+        Me.lbl_fecha_ven.Size = New System.Drawing.Size(136, 15)
         Me.lbl_fecha_ven.TabIndex = 2
-        Me.lbl_fecha_ven.Text = "Fecha de vencimiento:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lbl_fecha_ven.Text = "Fecha de vencimiento:"
         '
         'dt_exp
         '
-        Me.dt_exp.Location = New System.Drawing.Point(178, 27)
+        Me.dt_exp.CustomFormat = "dd MM yyyy"
+        Me.dt_exp.Location = New System.Drawing.Point(140, 34)
         Me.dt_exp.Name = "dt_exp"
-        Me.dt_exp.Size = New System.Drawing.Size(200, 21)
+        Me.dt_exp.Size = New System.Drawing.Size(252, 21)
         Me.dt_exp.TabIndex = 16
         '
         'lbl_fecha_ex
         '
         Me.lbl_fecha_ex.AutoSize = True
-        Me.lbl_fecha_ex.Location = New System.Drawing.Point(44, 28)
+        Me.lbl_fecha_ex.Location = New System.Drawing.Point(6, 35)
         Me.lbl_fecha_ex.Name = "lbl_fecha_ex"
         Me.lbl_fecha_ex.Size = New System.Drawing.Size(128, 15)
         Me.lbl_fecha_ex.TabIndex = 0
@@ -409,9 +431,9 @@ Partial Class FormSocios
         Me.gb_foto.Controls.Add(Me.btn_eliminar_foto)
         Me.gb_foto.Controls.Add(Me.btn_cargar_foto)
         Me.gb_foto.Controls.Add(Me.pb_foto_cliente)
-        Me.gb_foto.Location = New System.Drawing.Point(748, 27)
+        Me.gb_foto.Location = New System.Drawing.Point(779, 27)
         Me.gb_foto.Name = "gb_foto"
-        Me.gb_foto.Size = New System.Drawing.Size(250, 343)
+        Me.gb_foto.Size = New System.Drawing.Size(219, 343)
         Me.gb_foto.TabIndex = 6
         Me.gb_foto.TabStop = False
         Me.gb_foto.Text = "Fotografia socio"
@@ -421,7 +443,7 @@ Partial Class FormSocios
         Me.btn_eliminar_foto.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_eliminar_foto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_eliminar_foto.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_eliminar_foto.Location = New System.Drawing.Point(80, 298)
+        Me.btn_eliminar_foto.Location = New System.Drawing.Point(72, 301)
         Me.btn_eliminar_foto.Name = "btn_eliminar_foto"
         Me.btn_eliminar_foto.Size = New System.Drawing.Size(99, 25)
         Me.btn_eliminar_foto.TabIndex = 15
@@ -433,7 +455,7 @@ Partial Class FormSocios
         Me.btn_cargar_foto.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_cargar_foto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cargar_foto.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_cargar_foto.Location = New System.Drawing.Point(80, 255)
+        Me.btn_cargar_foto.Location = New System.Drawing.Point(72, 250)
         Me.btn_cargar_foto.Name = "btn_cargar_foto"
         Me.btn_cargar_foto.Size = New System.Drawing.Size(99, 25)
         Me.btn_cargar_foto.TabIndex = 14
@@ -443,7 +465,7 @@ Partial Class FormSocios
         'pb_foto_cliente
         '
         Me.pb_foto_cliente.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.pb_foto_cliente.Location = New System.Drawing.Point(39, 27)
+        Me.pb_foto_cliente.Location = New System.Drawing.Point(20, 27)
         Me.pb_foto_cliente.Name = "pb_foto_cliente"
         Me.pb_foto_cliente.Size = New System.Drawing.Size(183, 193)
         Me.pb_foto_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -460,7 +482,7 @@ Partial Class FormSocios
         Me.gb_acciones.Controls.Add(Me.btn_grabar)
         Me.gb_acciones.Location = New System.Drawing.Point(15, 462)
         Me.gb_acciones.Name = "gb_acciones"
-        Me.gb_acciones.Size = New System.Drawing.Size(835, 72)
+        Me.gb_acciones.Size = New System.Drawing.Size(805, 72)
         Me.gb_acciones.TabIndex = 7
         Me.gb_acciones.TabStop = False
         Me.gb_acciones.Text = "Acciones"
@@ -470,7 +492,7 @@ Partial Class FormSocios
         Me.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_limpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_limpiar.Location = New System.Drawing.Point(706, 23)
+        Me.btn_limpiar.Location = New System.Drawing.Point(660, 23)
         Me.btn_limpiar.Name = "btn_limpiar"
         Me.btn_limpiar.Size = New System.Drawing.Size(99, 31)
         Me.btn_limpiar.TabIndex = 21
@@ -482,7 +504,7 @@ Partial Class FormSocios
         Me.btn_generar_credencial.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_generar_credencial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_generar_credencial.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_generar_credencial.Location = New System.Drawing.Point(319, 23)
+        Me.btn_generar_credencial.Location = New System.Drawing.Point(282, 24)
         Me.btn_generar_credencial.Name = "btn_generar_credencial"
         Me.btn_generar_credencial.Size = New System.Drawing.Size(338, 31)
         Me.btn_generar_credencial.TabIndex = 20
@@ -494,7 +516,7 @@ Partial Class FormSocios
         Me.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_eliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_eliminar.Location = New System.Drawing.Point(179, 22)
+        Me.btn_eliminar.Location = New System.Drawing.Point(149, 24)
         Me.btn_eliminar.Name = "btn_eliminar"
         Me.btn_eliminar.Size = New System.Drawing.Size(99, 31)
         Me.btn_eliminar.TabIndex = 19
@@ -506,7 +528,7 @@ Partial Class FormSocios
         Me.btn_grabar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_grabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_grabar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_grabar.Location = New System.Drawing.Point(35, 23)
+        Me.btn_grabar.Location = New System.Drawing.Point(20, 23)
         Me.btn_grabar.Name = "btn_grabar"
         Me.btn_grabar.Size = New System.Drawing.Size(99, 32)
         Me.btn_grabar.TabIndex = 18
@@ -517,12 +539,17 @@ Partial Class FormSocios
         '
         Me.ofd_foto.FileName = "OpenFileDialog1"
         '
-        'txt_idCliente
+        'btn_dar_de_baja
         '
-        Me.txt_idCliente.Location = New System.Drawing.Point(169, 30)
-        Me.txt_idCliente.Name = "txt_idCliente"
-        Me.txt_idCliente.Size = New System.Drawing.Size(157, 21)
-        Me.txt_idCliente.TabIndex = 0
+        Me.btn_dar_de_baja.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_dar_de_baja.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_dar_de_baja.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_dar_de_baja.Location = New System.Drawing.Point(836, 34)
+        Me.btn_dar_de_baja.Name = "btn_dar_de_baja"
+        Me.btn_dar_de_baja.Size = New System.Drawing.Size(99, 25)
+        Me.btn_dar_de_baja.TabIndex = 18
+        Me.btn_dar_de_baja.Text = "Dar de Baja"
+        Me.btn_dar_de_baja.UseVisualStyleBackColor = False
         '
         'FormSocios
         '
@@ -599,5 +626,7 @@ Partial Class FormSocios
     Friend WithEvents btn_grabar As Button
     Friend WithEvents btn_eliminar_foto As Button
     Friend WithEvents ofd_foto As OpenFileDialog
-    Friend WithEvents txt_idCliente As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents btn_dar_de_baja As Button
 End Class
