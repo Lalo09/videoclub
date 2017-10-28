@@ -23,6 +23,10 @@ Partial Class FormEmpleados
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gb_datos_del_cliente = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblEmpleado = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.lbl_email = New System.Windows.Forms.Label()
         Me.txt_telefono = New System.Windows.Forms.TextBox()
@@ -39,8 +43,7 @@ Partial Class FormEmpleados
         Me.gb_foto = New System.Windows.Forms.GroupBox()
         Me.btn_eliminar_foto = New System.Windows.Forms.Button()
         Me.btn_cargar_foto = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.pb_foto_empleado = New System.Windows.Forms.PictureBox()
         Me.gb_datosContacto = New System.Windows.Forms.GroupBox()
         Me.txt_pais = New System.Windows.Forms.TextBox()
         Me.lbl_pais = New System.Windows.Forms.Label()
@@ -55,29 +58,27 @@ Partial Class FormEmpleados
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.gb_sueldo = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.txtSueldo = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.pb_foto_cliente = New System.Windows.Forms.PictureBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dg_empleado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnBuscarEmp = New System.Windows.Forms.Button()
+        Me.Txt_buscar_empleado = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Open_F2 = New System.Windows.Forms.OpenFileDialog()
         Me.gb_datos_del_cliente.SuspendLayout()
         Me.gb_foto.SuspendLayout()
+        CType(Me.pb_foto_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gb_datosContacto.SuspendLayout()
         Me.gb_sueldo.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb_foto_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dg_empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,7 +90,7 @@ Partial Class FormEmpleados
         '
         Me.gb_datos_del_cliente.Controls.Add(Me.DateTimePicker1)
         Me.gb_datos_del_cliente.Controls.Add(Me.Label3)
-        Me.gb_datos_del_cliente.Controls.Add(Me.Label2)
+        Me.gb_datos_del_cliente.Controls.Add(Me.lblEmpleado)
         Me.gb_datos_del_cliente.Controls.Add(Me.Label1)
         Me.gb_datos_del_cliente.Controls.Add(Me.txt_email)
         Me.gb_datos_del_cliente.Controls.Add(Me.lbl_email)
@@ -109,7 +110,42 @@ Partial Class FormEmpleados
         Me.gb_datos_del_cliente.Size = New System.Drawing.Size(702, 180)
         Me.gb_datos_del_cliente.TabIndex = 4
         Me.gb_datos_del_cliente.TabStop = False
-        Me.gb_datos_del_cliente.Text = "Datos de cliente"
+        Me.gb_datos_del_cliente.Text = "Datos del empleado"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(481, 138)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(165, 21)
+        Me.DateTimePicker1.TabIndex = 29
+        Me.DateTimePicker1.Value = New Date(2017, 7, 10, 0, 0, 0, 0)
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(353, 144)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(129, 15)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Fecha de nacimiento:"
+        '
+        'lblEmpleado
+        '
+        Me.lblEmpleado.AutoSize = True
+        Me.lblEmpleado.Location = New System.Drawing.Point(199, 27)
+        Me.lblEmpleado.Name = "lblEmpleado"
+        Me.lblEmpleado.Size = New System.Drawing.Size(14, 15)
+        Me.lblEmpleado.TabIndex = 27
+        Me.lblEmpleado.Text = "0"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(58, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(135, 15)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Numero de empleado:"
         '
         'txt_email
         '
@@ -226,7 +262,7 @@ Partial Class FormEmpleados
         '
         Me.gb_foto.Controls.Add(Me.btn_eliminar_foto)
         Me.gb_foto.Controls.Add(Me.btn_cargar_foto)
-        Me.gb_foto.Controls.Add(Me.pb_foto_cliente)
+        Me.gb_foto.Controls.Add(Me.pb_foto_empleado)
         Me.gb_foto.Location = New System.Drawing.Point(748, 12)
         Me.gb_foto.Name = "gb_foto"
         Me.gb_foto.Size = New System.Drawing.Size(250, 303)
@@ -258,23 +294,15 @@ Partial Class FormEmpleados
         Me.btn_cargar_foto.Text = "Cargar "
         Me.btn_cargar_foto.UseVisualStyleBackColor = False
         '
-        'Label1
+        'pb_foto_empleado
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(135, 15)
-        Me.Label1.TabIndex = 26
-        Me.Label1.Text = "Numero de empleado:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(199, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(14, 15)
-        Me.Label2.TabIndex = 27
-        Me.Label2.Text = "0"
+        Me.pb_foto_empleado.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.pb_foto_empleado.Location = New System.Drawing.Point(39, 37)
+        Me.pb_foto_empleado.Name = "pb_foto_empleado"
+        Me.pb_foto_empleado.Size = New System.Drawing.Size(183, 163)
+        Me.pb_foto_empleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb_foto_empleado.TabIndex = 0
+        Me.pb_foto_empleado.TabStop = False
         '
         'gb_datosContacto
         '
@@ -396,38 +424,13 @@ Partial Class FormEmpleados
         'gb_sueldo
         '
         Me.gb_sueldo.Controls.Add(Me.Button1)
-        Me.gb_sueldo.Controls.Add(Me.TextBox1)
+        Me.gb_sueldo.Controls.Add(Me.txtSueldo)
         Me.gb_sueldo.Controls.Add(Me.Label4)
         Me.gb_sueldo.Location = New System.Drawing.Point(22, 321)
         Me.gb_sueldo.Name = "gb_sueldo"
         Me.gb_sueldo.Size = New System.Drawing.Size(702, 49)
         Me.gb_sueldo.TabIndex = 9
         Me.gb_sueldo.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(353, 144)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(122, 15)
-        Me.Label3.TabIndex = 28
-        Me.Label3.Text = "Fecha de ncimiento:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 24)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 15)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Sueldo:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(72, 20)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox1.TabIndex = 1
         '
         'Button1
         '
@@ -441,82 +444,82 @@ Partial Class FormEmpleados
         Me.Button1.Text = "Dar de baja"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'txtSueldo
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(80, 18)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 32)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Guardar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.txtSueldo.Location = New System.Drawing.Point(72, 20)
+        Me.txtSueldo.Name = "txtSueldo"
+        Me.txtSueldo.Size = New System.Drawing.Size(200, 21)
+        Me.txtSueldo.TabIndex = 1
         '
-        'Button3
+        'Label4
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(80, 72)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(99, 32)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(11, 24)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(51, 15)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Sueldo:"
         '
-        'Button4
+        'btnGuardar
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(80, 125)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(99, 32)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Limpiar"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGuardar.Location = New System.Drawing.Point(80, 18)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(99, 32)
+        Me.btnGuardar.TabIndex = 3
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEliminar.Location = New System.Drawing.Point(80, 72)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(99, 32)
+        Me.btnEliminar.TabIndex = 10
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnLimpiar.Location = New System.Drawing.Point(80, 125)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(99, 32)
+        Me.btnLimpiar.TabIndex = 11
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.btnLimpiar)
+        Me.GroupBox1.Controls.Add(Me.btnGuardar)
+        Me.GroupBox1.Controls.Add(Me.btnEliminar)
         Me.GroupBox1.Location = New System.Drawing.Point(748, 321)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(250, 175)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         '
-        'DataGridView1
+        'dg_empleado
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 377)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(702, 101)
-        Me.DataGridView1.TabIndex = 13
-        '
-        'pb_foto_cliente
-        '
-        Me.pb_foto_cliente.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.pb_foto_cliente.Location = New System.Drawing.Point(39, 37)
-        Me.pb_foto_cliente.Name = "pb_foto_cliente"
-        Me.pb_foto_cliente.Size = New System.Drawing.Size(183, 163)
-        Me.pb_foto_cliente.TabIndex = 0
-        Me.pb_foto_cliente.TabStop = False
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(481, 138)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(165, 21)
-        Me.DateTimePicker1.TabIndex = 29
+        Me.dg_empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg_empleado.Location = New System.Drawing.Point(22, 377)
+        Me.dg_empleado.Name = "dg_empleado"
+        Me.dg_empleado.Size = New System.Drawing.Size(702, 101)
+        Me.dg_empleado.TabIndex = 13
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.btnBuscarEmp)
+        Me.GroupBox2.Controls.Add(Me.Txt_buscar_empleado)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Location = New System.Drawing.Point(22, 484)
         Me.GroupBox2.Name = "GroupBox2"
@@ -524,34 +527,6 @@ Partial Class FormEmpleados
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Buscar"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(46, 18)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(135, 15)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Numero de empleado:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(187, 15)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(139, 21)
-        Me.TextBox2.TabIndex = 14
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(346, 15)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(149, 23)
-        Me.Button5.TabIndex = 3
-        Me.Button5.Text = "Buscar"
-        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button6
         '
@@ -565,13 +540,45 @@ Partial Class FormEmpleados
         Me.Button6.Text = "Deshacer busqueda"
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'btnBuscarEmp
+        '
+        Me.btnBuscarEmp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnBuscarEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscarEmp.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnBuscarEmp.Location = New System.Drawing.Point(346, 15)
+        Me.btnBuscarEmp.Name = "btnBuscarEmp"
+        Me.btnBuscarEmp.Size = New System.Drawing.Size(149, 23)
+        Me.btnBuscarEmp.TabIndex = 3
+        Me.btnBuscarEmp.Text = "Buscar"
+        Me.btnBuscarEmp.UseVisualStyleBackColor = False
+        '
+        'Txt_buscar_empleado
+        '
+        Me.Txt_buscar_empleado.Location = New System.Drawing.Point(187, 15)
+        Me.Txt_buscar_empleado.Name = "Txt_buscar_empleado"
+        Me.Txt_buscar_empleado.Size = New System.Drawing.Size(139, 21)
+        Me.Txt_buscar_empleado.TabIndex = 14
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(46, 18)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(135, 15)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Numero de empleado:"
+        '
+        'Open_F2
+        '
+        Me.Open_F2.FileName = "OpenFileDialog1"
+        '
         'FormEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1010, 546)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dg_empleado)
         Me.Controls.Add(Me.gb_sueldo)
         Me.Controls.Add(Me.gb_datosContacto)
         Me.Controls.Add(Me.gb_foto)
@@ -585,18 +592,18 @@ Partial Class FormEmpleados
         Me.Controls.SetChildIndex(Me.gb_foto, 0)
         Me.Controls.SetChildIndex(Me.gb_datosContacto, 0)
         Me.Controls.SetChildIndex(Me.gb_sueldo, 0)
-        Me.Controls.SetChildIndex(Me.DataGridView1, 0)
+        Me.Controls.SetChildIndex(Me.dg_empleado, 0)
         Me.Controls.SetChildIndex(Me.GroupBox2, 0)
         Me.gb_datos_del_cliente.ResumeLayout(False)
         Me.gb_datos_del_cliente.PerformLayout()
         Me.gb_foto.ResumeLayout(False)
+        CType(Me.pb_foto_empleado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gb_datosContacto.ResumeLayout(False)
         Me.gb_datosContacto.PerformLayout()
         Me.gb_sueldo.ResumeLayout(False)
         Me.gb_sueldo.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb_foto_cliente, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dg_empleado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -620,8 +627,8 @@ Partial Class FormEmpleados
     Friend WithEvents gb_foto As GroupBox
     Friend WithEvents btn_eliminar_foto As Button
     Friend WithEvents btn_cargar_foto As Button
-    Friend WithEvents pb_foto_cliente As PictureBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents pb_foto_empleado As PictureBox
+    Friend WithEvents lblEmpleado As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents gb_datosContacto As GroupBox
@@ -639,17 +646,18 @@ Partial Class FormEmpleados
     Friend WithEvents lbl_calle As Label
     Friend WithEvents gb_sueldo As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSueldo As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnGuardar As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnLimpiar As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dg_empleado As DataGridView
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents btnBuscarEmp As Button
+    Friend WithEvents Txt_buscar_empleado As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Open_F2 As OpenFileDialog
 End Class
