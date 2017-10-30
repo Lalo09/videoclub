@@ -182,6 +182,7 @@ Partial Class FormBuscarSocios
         Me.MaximizeBox = True
         Me.Name = "FormBuscarSocios"
         Me.Text = "Buscar socio"
+        Me.TopMost = True
         Me.Controls.SetChildIndex(Me.gb_opciones_buscar, 0)
         Me.Controls.SetChildIndex(Me.dg_socios, 0)
         Me.Controls.SetChildIndex(Me.btn_salir, 0)

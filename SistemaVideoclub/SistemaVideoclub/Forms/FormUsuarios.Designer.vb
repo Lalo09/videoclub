@@ -25,51 +25,52 @@ Partial Class FormUsuarios
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_buscar_por_numero = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dg_usuario = New System.Windows.Forms.DataGridView()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btn_nuevo_usuario = New System.Windows.Forms.Button()
+        Me.btn_crear_usuario = New System.Windows.Forms.Button()
+        Me.rb_hacer_admin = New System.Windows.Forms.RadioButton()
+        Me.txt_repass = New System.Windows.Forms.TextBox()
+        Me.txt_pass = New System.Windows.Forms.TextBox()
+        Me.txt_id_empleado = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.rb_editar_hacer_adm = New System.Windows.Forms.RadioButton()
+        Me.txt_editar_repass = New System.Windows.Forms.TextBox()
+        Me.txt_editar_pass = New System.Windows.Forms.TextBox()
+        Me.txt_empleado_editar = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btn_guardar_cambios = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dg_usuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_salir
         '
         Me.btn_salir.Location = New System.Drawing.Point(449, 331)
+        Me.btn_salir.TabIndex = 6
         '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.Button4)
         Me.TabPage2.Controls.Add(Me.Button3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
+        Me.TabPage2.Controls.Add(Me.txt_buscar_por_numero)
         Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Controls.Add(Me.DataGridView1)
+        Me.TabPage2.Controls.Add(Me.dg_usuario)
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -83,7 +84,7 @@ Partial Class FormUsuarios
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(362, 213)
+        Me.Button4.Location = New System.Drawing.Point(362, 215)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 4
@@ -95,19 +96,19 @@ Partial Class FormUsuarios
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(272, 213)
+        Me.Button3.Location = New System.Drawing.Point(271, 215)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Buscar"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'txt_buscar_por_numero
         '
-        Me.TextBox4.Location = New System.Drawing.Point(76, 216)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(180, 21)
-        Me.TextBox4.TabIndex = 2
+        Me.txt_buscar_por_numero.Location = New System.Drawing.Point(76, 216)
+        Me.txt_buscar_por_numero.Name = "txt_buscar_por_numero"
+        Me.txt_buscar_por_numero.Size = New System.Drawing.Size(180, 21)
+        Me.txt_buscar_por_numero.TabIndex = 2
         '
         'Label4
         '
@@ -118,23 +119,28 @@ Partial Class FormUsuarios
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Buscar:"
         '
-        'DataGridView1
+        'dg_usuario
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(19, 28)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(488, 150)
-        Me.DataGridView1.TabIndex = 0
+        Me.dg_usuario.AllowUserToAddRows = False
+        Me.dg_usuario.AllowUserToDeleteRows = False
+        Me.dg_usuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dg_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg_usuario.Location = New System.Drawing.Point(19, 28)
+        Me.dg_usuario.Name = "dg_usuario"
+        Me.dg_usuario.ReadOnly = True
+        Me.dg_usuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dg_usuario.Size = New System.Drawing.Size(488, 150)
+        Me.dg_usuario.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.PictureBox1)
-        Me.TabPage1.Controls.Add(Me.Button2)
-        Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Controls.Add(Me.RadioButton1)
-        Me.TabPage1.Controls.Add(Me.TextBox3)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.btn_nuevo_usuario)
+        Me.TabPage1.Controls.Add(Me.btn_crear_usuario)
+        Me.TabPage1.Controls.Add(Me.rb_hacer_admin)
+        Me.TabPage1.Controls.Add(Me.txt_repass)
+        Me.TabPage1.Controls.Add(Me.txt_pass)
+        Me.TabPage1.Controls.Add(Me.txt_id_empleado)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
@@ -146,73 +152,63 @@ Partial Class FormUsuarios
         Me.TabPage1.Text = "Agregar usuario"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'btn_nuevo_usuario
         '
-        Me.PictureBox1.Image = Global.SistemaVideoclub.My.Resources.Resources.user
-        Me.PictureBox1.Location = New System.Drawing.Point(370, 36)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(131, 113)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
+        Me.btn_nuevo_usuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_nuevo_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_nuevo_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_nuevo_usuario.Location = New System.Drawing.Point(276, 221)
+        Me.btn_nuevo_usuario.Name = "btn_nuevo_usuario"
+        Me.btn_nuevo_usuario.Size = New System.Drawing.Size(99, 32)
+        Me.btn_nuevo_usuario.TabIndex = 5
+        Me.btn_nuevo_usuario.Text = "Nuevo usuario"
+        Me.btn_nuevo_usuario.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btn_crear_usuario
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(276, 221)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 32)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Nuevo usuario"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn_crear_usuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_crear_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_crear_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_crear_usuario.Location = New System.Drawing.Point(154, 221)
+        Me.btn_crear_usuario.Name = "btn_crear_usuario"
+        Me.btn_crear_usuario.Size = New System.Drawing.Size(99, 32)
+        Me.btn_crear_usuario.TabIndex = 4
+        Me.btn_crear_usuario.Text = "Crear usuario"
+        Me.btn_crear_usuario.UseVisualStyleBackColor = False
         '
-        'Button1
+        'rb_hacer_admin
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(154, 221)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 32)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Crear usuario"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.rb_hacer_admin.AutoSize = True
+        Me.rb_hacer_admin.Location = New System.Drawing.Point(152, 173)
+        Me.rb_hacer_admin.Name = "rb_hacer_admin"
+        Me.rb_hacer_admin.Size = New System.Drawing.Size(141, 19)
+        Me.rb_hacer_admin.TabIndex = 3
+        Me.rb_hacer_admin.TabStop = True
+        Me.rb_hacer_admin.Text = "Hacer administrador"
+        Me.rb_hacer_admin.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'txt_repass
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(152, 173)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(141, 19)
-        Me.RadioButton1.TabIndex = 6
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Hacer administrador"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.txt_repass.Location = New System.Drawing.Point(156, 128)
+        Me.txt_repass.Name = "txt_repass"
+        Me.txt_repass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_repass.Size = New System.Drawing.Size(180, 21)
+        Me.txt_repass.TabIndex = 2
         '
-        'TextBox3
+        'txt_pass
         '
-        Me.TextBox3.Location = New System.Drawing.Point(156, 128)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.Size = New System.Drawing.Size(180, 21)
-        Me.TextBox3.TabIndex = 5
+        Me.txt_pass.Location = New System.Drawing.Point(156, 84)
+        Me.txt_pass.Name = "txt_pass"
+        Me.txt_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_pass.Size = New System.Drawing.Size(180, 21)
+        Me.txt_pass.TabIndex = 1
         '
-        'TextBox2
+        'txt_id_empleado
         '
-        Me.TextBox2.Location = New System.Drawing.Point(156, 84)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(180, 21)
-        Me.TextBox2.TabIndex = 3
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(156, 36)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(97, 21)
-        Me.TextBox1.TabIndex = 1
+        Me.txt_id_empleado.Location = New System.Drawing.Point(156, 39)
+        Me.txt_id_empleado.Name = "txt_id_empleado"
+        Me.txt_id_empleado.Size = New System.Drawing.Size(97, 21)
+        Me.txt_id_empleado.TabIndex = 0
         '
         'Label3
         '
@@ -235,7 +231,7 @@ Partial Class FormUsuarios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(15, 39)
+        Me.Label1.Location = New System.Drawing.Point(13, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(135, 15)
         Me.Label1.TabIndex = 0
@@ -255,14 +251,14 @@ Partial Class FormUsuarios
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.PictureBox2)
-        Me.TabPage3.Controls.Add(Me.RadioButton2)
-        Me.TabPage3.Controls.Add(Me.TextBox5)
-        Me.TabPage3.Controls.Add(Me.TextBox6)
-        Me.TabPage3.Controls.Add(Me.TextBox7)
+        Me.TabPage3.Controls.Add(Me.rb_editar_hacer_adm)
+        Me.TabPage3.Controls.Add(Me.txt_editar_repass)
+        Me.TabPage3.Controls.Add(Me.txt_editar_pass)
+        Me.TabPage3.Controls.Add(Me.txt_empleado_editar)
         Me.TabPage3.Controls.Add(Me.Label5)
         Me.TabPage3.Controls.Add(Me.Label6)
         Me.TabPage3.Controls.Add(Me.Label7)
-        Me.TabPage3.Controls.Add(Me.Button5)
+        Me.TabPage3.Controls.Add(Me.btn_guardar_cambios)
         Me.TabPage3.Location = New System.Drawing.Point(4, 24)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
@@ -274,46 +270,46 @@ Partial Class FormUsuarios
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.SistemaVideoclub.My.Resources.Resources.user
-        Me.PictureBox2.Location = New System.Drawing.Point(370, 36)
+        Me.PictureBox2.Location = New System.Drawing.Point(379, 36)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(131, 113)
+        Me.PictureBox2.Size = New System.Drawing.Size(125, 113)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 22
         Me.PictureBox2.TabStop = False
         '
-        'RadioButton2
+        'rb_editar_hacer_adm
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(156, 177)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(141, 19)
-        Me.RadioButton2.TabIndex = 21
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Hacer administrador"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rb_editar_hacer_adm.AutoSize = True
+        Me.rb_editar_hacer_adm.Location = New System.Drawing.Point(156, 177)
+        Me.rb_editar_hacer_adm.Name = "rb_editar_hacer_adm"
+        Me.rb_editar_hacer_adm.Size = New System.Drawing.Size(141, 19)
+        Me.rb_editar_hacer_adm.TabIndex = 21
+        Me.rb_editar_hacer_adm.TabStop = True
+        Me.rb_editar_hacer_adm.Text = "Hacer administrador"
+        Me.rb_editar_hacer_adm.UseVisualStyleBackColor = True
         '
-        'TextBox5
+        'txt_editar_repass
         '
-        Me.TextBox5.Location = New System.Drawing.Point(156, 128)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox5.Size = New System.Drawing.Size(180, 21)
-        Me.TextBox5.TabIndex = 20
+        Me.txt_editar_repass.Location = New System.Drawing.Point(156, 128)
+        Me.txt_editar_repass.Name = "txt_editar_repass"
+        Me.txt_editar_repass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_editar_repass.Size = New System.Drawing.Size(180, 21)
+        Me.txt_editar_repass.TabIndex = 20
         '
-        'TextBox6
+        'txt_editar_pass
         '
-        Me.TextBox6.Location = New System.Drawing.Point(156, 84)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox6.Size = New System.Drawing.Size(180, 21)
-        Me.TextBox6.TabIndex = 18
+        Me.txt_editar_pass.Location = New System.Drawing.Point(156, 81)
+        Me.txt_editar_pass.Name = "txt_editar_pass"
+        Me.txt_editar_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_editar_pass.Size = New System.Drawing.Size(180, 21)
+        Me.txt_editar_pass.TabIndex = 18
         '
-        'TextBox7
+        'txt_empleado_editar
         '
-        Me.TextBox7.Location = New System.Drawing.Point(156, 36)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(97, 21)
-        Me.TextBox7.TabIndex = 16
+        Me.txt_empleado_editar.Location = New System.Drawing.Point(156, 36)
+        Me.txt_empleado_editar.Name = "txt_empleado_editar"
+        Me.txt_empleado_editar.Size = New System.Drawing.Size(97, 21)
+        Me.txt_empleado_editar.TabIndex = 16
         '
         'Label5
         '
@@ -327,7 +323,7 @@ Partial Class FormUsuarios
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(72, 90)
+        Me.Label6.Location = New System.Drawing.Point(72, 84)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(78, 15)
         Me.Label6.TabIndex = 17
@@ -342,18 +338,28 @@ Partial Class FormUsuarios
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Numero de empleado:"
         '
-        'Button5
+        'btn_guardar_cambios
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("MS Reference Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(157, 224)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(99, 46)
-        Me.Button5.TabIndex = 14
-        Me.Button5.Text = "Guardar cambios"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btn_guardar_cambios.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_guardar_cambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_guardar_cambios.Font = New System.Drawing.Font("MS Reference Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar_cambios.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_guardar_cambios.Location = New System.Drawing.Point(157, 224)
+        Me.btn_guardar_cambios.Name = "btn_guardar_cambios"
+        Me.btn_guardar_cambios.Size = New System.Drawing.Size(99, 46)
+        Me.btn_guardar_cambios.TabIndex = 14
+        Me.btn_guardar_cambios.Text = "Guardar cambios"
+        Me.btn_guardar_cambios.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SistemaVideoclub.My.Resources.Resources.user
+        Me.PictureBox1.Location = New System.Drawing.Point(375, 39)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(125, 113)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
         '
         'FormUsuarios
         '
@@ -367,14 +373,14 @@ Partial Class FormUsuarios
         Me.Controls.SetChildIndex(Me.btn_salir, 0)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dg_usuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -382,29 +388,29 @@ Partial Class FormUsuarios
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txt_buscar_por_numero As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dg_usuario As DataGridView
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btn_nuevo_usuario As Button
+    Friend WithEvents btn_crear_usuario As Button
+    Friend WithEvents rb_hacer_admin As RadioButton
+    Friend WithEvents txt_repass As TextBox
+    Friend WithEvents txt_pass As TextBox
+    Friend WithEvents txt_id_empleado As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btn_guardar_cambios As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents rb_editar_hacer_adm As RadioButton
+    Friend WithEvents txt_editar_repass As TextBox
+    Friend WithEvents txt_editar_pass As TextBox
+    Friend WithEvents txt_empleado_editar As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

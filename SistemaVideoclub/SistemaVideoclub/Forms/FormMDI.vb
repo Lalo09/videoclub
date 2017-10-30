@@ -2,6 +2,9 @@
 
 Public Class FormMDI
 
+    Dim usuario As New ClassUsuario
+    Dim funcionesUsuario As New FuncionesUsuario
+
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles SubmenuCliente1.Click, NewToolStripButton.Click
         '' Cree una nueva instancia del formulario secundario.
         'Dim ChildForm As New System.Windows.Forms.Form
@@ -94,7 +97,15 @@ Public Class FormMDI
 
     Private Sub FormMDI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
-
+        'Me.WindowState = FormWindowState.Maximized
+        'Me.TopMost = True
+        ToolStripStatusLabel.Text = "Empleado: " + numero_de_empleado
+        If funcionesUsuario.es_admin(numero_de_empleado) = False Then
+            MantenimientoToolStripMenuItem.Visible = False 'Pestana mantenimiento
+            RedoToolStripMenuItem.Visible = False 'Pestana rentas
+            CorteDeCajaToolStripMenuItem.Visible = False 'Pestana corte de caja
+            VentasToolStripMenuItem.Visible = False 'Pestana ventas
+        End If
     End Sub
 
     Private Sub FormMDI_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

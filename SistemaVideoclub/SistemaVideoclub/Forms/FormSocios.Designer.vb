@@ -54,6 +54,7 @@ Partial Class FormSocios
         Me.txt_calle = New System.Windows.Forms.TextBox()
         Me.lbl_calle = New System.Windows.Forms.Label()
         Me.gb_fechas = New System.Windows.Forms.GroupBox()
+        Me.btn_dar_de_baja = New System.Windows.Forms.Button()
         Me.dt_ven = New System.Windows.Forms.DateTimePicker()
         Me.lbl_fecha_ven = New System.Windows.Forms.Label()
         Me.dt_exp = New System.Windows.Forms.DateTimePicker()
@@ -68,7 +69,6 @@ Partial Class FormSocios
         Me.btn_eliminar = New System.Windows.Forms.Button()
         Me.btn_grabar = New System.Windows.Forms.Button()
         Me.ofd_foto = New System.Windows.Forms.OpenFileDialog()
-        Me.btn_dar_de_baja = New System.Windows.Forms.Button()
         Me.gb_datos_del_cliente.SuspendLayout()
         Me.gb_datosContacto.SuspendLayout()
         Me.gb_fechas.SuspendLayout()
@@ -392,6 +392,18 @@ Partial Class FormSocios
         Me.gb_fechas.TabIndex = 5
         Me.gb_fechas.TabStop = False
         '
+        'btn_dar_de_baja
+        '
+        Me.btn_dar_de_baja.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_dar_de_baja.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_dar_de_baja.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btn_dar_de_baja.Location = New System.Drawing.Point(836, 34)
+        Me.btn_dar_de_baja.Name = "btn_dar_de_baja"
+        Me.btn_dar_de_baja.Size = New System.Drawing.Size(99, 25)
+        Me.btn_dar_de_baja.TabIndex = 18
+        Me.btn_dar_de_baja.Text = "Dar de Baja"
+        Me.btn_dar_de_baja.UseVisualStyleBackColor = False
+        '
         'dt_ven
         '
         Me.dt_ven.CustomFormat = "dd MM yyyy"
@@ -539,18 +551,6 @@ Partial Class FormSocios
         '
         Me.ofd_foto.FileName = "OpenFileDialog1"
         '
-        'btn_dar_de_baja
-        '
-        Me.btn_dar_de_baja.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btn_dar_de_baja.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_dar_de_baja.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_dar_de_baja.Location = New System.Drawing.Point(836, 34)
-        Me.btn_dar_de_baja.Name = "btn_dar_de_baja"
-        Me.btn_dar_de_baja.Size = New System.Drawing.Size(99, 25)
-        Me.btn_dar_de_baja.TabIndex = 18
-        Me.btn_dar_de_baja.Text = "Dar de Baja"
-        Me.btn_dar_de_baja.UseVisualStyleBackColor = False
-        '
         'FormSocios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -563,6 +563,7 @@ Partial Class FormSocios
         Me.Controls.Add(Me.gb_datos_del_cliente)
         Me.Name = "FormSocios"
         Me.Text = "Socios"
+        Me.TopMost = True
         Me.Controls.SetChildIndex(Me.btn_salir, 0)
         Me.Controls.SetChildIndex(Me.gb_datos_del_cliente, 0)
         Me.Controls.SetChildIndex(Me.gb_datosContacto, 0)

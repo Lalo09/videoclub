@@ -392,6 +392,7 @@ Partial Class FormMDI
         Me.MaximizeBox = False
         Me.Name = "FormMDI"
         Me.Text = "Videoclub MovieMAX"
+        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
