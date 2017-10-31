@@ -75,6 +75,7 @@
     <Compile Include="Clases\ClassCliente.vb" />
     <Compile Include="Clases\ClassDistribuidor.vb" />
     <Compile Include="Clases\ClassEmpleado.vb" />
+    <Compile Include="Clases\ClassPelicula.vb" />
     <Compile Include="Clases\ClassSocio.vb" />
     <Compile Include="Clases\ClassUsuario.vb" />
     <Compile Include="Conexion\ModuloConexion.vb" />
@@ -196,6 +197,7 @@
     <Compile Include="Funciones\FuncionesDistribuidor.vb" />
     <Compile Include="Funciones\FuncionesEmpleado.vb" />
     <Compile Include="Funciones\FuncionesGenerales.vb" />
+    <Compile Include="Funciones\FuncionesPelicula.vb" />
     <Compile Include="Funciones\FuncionesSocio.vb" />
     <Compile Include="Funciones\FuncionesUsuario.vb" />
     <Compile Include="Funciones\VariablesGlobales.vb" />
