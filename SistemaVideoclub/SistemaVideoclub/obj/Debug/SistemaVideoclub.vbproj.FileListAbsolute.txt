@@ -1,0 +1,93 @@
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.exe.config
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.exe
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.pdb
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.xml
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormAcercaDe.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormAdeudos.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormBuscarSocios.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormClientes.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormCorteCaja.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormDevoluciones.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormDistribuidores.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormEmpleados.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormMDI.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormNuevaRenta.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormPeliculas.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormSocios.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormUsuarios.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVentas.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerBalance.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerRentas.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerVentas.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FromBase.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormLogin.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.Resources.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.vbproj.GenerateResource.Cache
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.exe
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.xml
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.pdb
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.vbprojResolveAssemblyReference.cache
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormCredencial.resources
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\RdlCompile.cache
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\obj\Debug\RdlCompile.compiled
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Documents\Visual Studio 2015\Projects\SistemaVideoclub\SistemaVideoclub\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.exe.config
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.exe
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.vbprojResolveAssemblyReference.cache
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormGenerarReciboRenta.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormGenerarReciboVenta.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormGenerarTicketAdeudo.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormAcercaDe.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormAdeudos.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormBuscarSocios.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormClientes.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormCorteCaja.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormCredencial.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormDevoluciones.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormDistribuidores.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormEmpleados.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormMDI.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormNuevaRenta.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormPeliculas.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormSocios.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormUsuarios.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVentas.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerBalance.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerRentas.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormVerVentas.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FromBase.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.FormLogin.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.Resources.resources
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.vbproj.GenerateResource.Cache
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\RdlCompile.cache
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\RdlCompile.compiled
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.exe
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.xml
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\obj\Debug\SistemaVideoclub.pdb
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.pdb
+C:\Users\EduardoEspinoza\Downloads\SistemaVideoclub\SistemaVideoclub\bin\Debug\SistemaVideoclub.xml

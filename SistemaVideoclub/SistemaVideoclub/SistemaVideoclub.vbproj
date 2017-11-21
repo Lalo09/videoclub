@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E298E3F6-17BF-484D-BEBC-890932D0CFBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaVideoclub.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaVideoclub</RootNamespace>
+    <AssemblyName>SistemaVideoclub</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaVideoclub.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaVideoclub.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ClassAdeudo.vb" />
+    <Compile Include="Clases\ClassCliente.vb" />
+    <Compile Include="Clases\ClassCorteCaja.vb" />
+    <Compile Include="Clases\ClassDetalleRenta.vb" />
+    <Compile Include="Clases\ClassDetalleVenta.vb" />
+    <Compile Include="Clases\ClassDevolucion.vb" />
+    <Compile Include="Clases\ClassDistribuidor.vb" />
+    <Compile Include="Clases\ClassEmpleado.vb" />
+    <Compile Include="Clases\ClassPelicula.vb" />
+    <Compile Include="Clases\ClassRenta.vb" />
+    <Compile Include="Clases\ClassSocio.vb" />
+    <Compile Include="Clases\ClassUsuario.vb" />
+    <Compile Include="Clases\ClassVenta.vb" />
+    <Compile Include="Conexion\ModuloConexion.vb" />
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAcercaDe.Designer.vb">
+      <DependentUpon>FormAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdeudos.Designer.vb">
+      <DependentUpon>FormAdeudos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAdeudos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBuscarSocios.Designer.vb">
+      <DependentUpon>FormBuscarSocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBuscarSocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClientes.Designer.vb">
+      <DependentUpon>FormClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCorteCaja.Designer.vb">
+      <DependentUpon>FormCorteCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCorteCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCredencial.Designer.vb">
+      <DependentUpon>FormCredencial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCredencial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDevoluciones.Designer.vb">
+      <DependentUpon>FormDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDistribuidores.Designer.vb">
+      <DependentUpon>FormDistribuidores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDistribuidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmpleados.Designer.vb">
+      <DependentUpon>FormEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGenerarReciboRenta.Designer.vb">
+      <DependentUpon>FormGenerarReciboRenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGenerarReciboRenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGenerarReciboVenta.Designer.vb">
+      <DependentUpon>FormGenerarReciboVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGenerarReciboVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGenerarTicketAdeudo.Designer.vb">
+      <DependentUpon>FormGenerarTicketAdeudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGenerarTicketAdeudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMDI.Designer.vb">
+      <DependentUpon>FormMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNuevaRenta.Designer.vb">
+      <DependentUpon>FormNuevaRenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNuevaRenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPeliculas.Designer.vb">
+      <DependentUpon>FormPeliculas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPeliculas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSocios.Designer.vb">
+      <DependentUpon>FormSocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.Designer.vb">
+      <DependentUpon>FormUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVentas.Designer.vb">
+      <DependentUpon>FormVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVerBalance.Designer.vb">
+      <DependentUpon>FormVerBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVerBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVerRentas.Designer.vb">
+      <DependentUpon>FormVerRentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVerRentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVerVentas.Designer.vb">
+      <DependentUpon>FormVerVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVerVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FromBase.Designer.vb">
+      <DependentUpon>FromBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FromBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FuncionesAdeudo.vb" />
+    <Compile Include="Funciones\FuncionesCliente.vb" />
+    <Compile Include="Funciones\FuncionesCorteCaja.vb" />
+    <Compile Include="Funciones\FuncionesDetalleRenta.vb" />
+    <Compile Include="Funciones\FuncionesDetalleVenta.vb" />
+    <Compile Include="Funciones\FuncionesDevolucion.vb" />
+    <Compile Include="Funciones\FuncionesDistribuidor.vb" />
+    <Compile Include="Funciones\FuncionesEmpleado.vb" />
+    <Compile Include="Funciones\FuncionesGenerales.vb" />
+    <Compile Include="Funciones\FuncionesPelicula.vb" />
+    <Compile Include="Funciones\FuncionesRenta.vb" />
+    <Compile Include="Funciones\FuncionesSocio.vb" />
+    <Compile Include="Funciones\FuncionesUsuario.vb" />
+    <Compile Include="Funciones\FuncionesVenta.vb" />
+    <Compile Include="Funciones\VariablesGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormGenerarReciboRenta.resx">
+      <DependentUpon>FormGenerarReciboRenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGenerarReciboVenta.resx">
+      <DependentUpon>FormGenerarReciboVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGenerarTicketAdeudo.resx">
+      <DependentUpon>FormGenerarTicketAdeudo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Credencial.rdlc" />
+    <EmbeddedResource Include="Forms\FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAdeudos.resx">
+      <DependentUpon>FormAdeudos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBuscarSocios.resx">
+      <DependentUpon>FormBuscarSocios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClientes.resx">
+      <DependentUpon>FormClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCorteCaja.resx">
+      <DependentUpon>FormCorteCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCredencial.resx">
+      <DependentUpon>FormCredencial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDevoluciones.resx">
+      <DependentUpon>FormDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDistribuidores.resx">
+      <DependentUpon>FormDistribuidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEmpleados.resx">
+      <DependentUpon>FormEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMDI.resx">
+      <DependentUpon>FormMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNuevaRenta.resx">
+      <DependentUpon>FormNuevaRenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPeliculas.resx">
+      <DependentUpon>FormPeliculas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSocios.resx">
+      <DependentUpon>FormSocios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVentas.resx">
+      <DependentUpon>FormVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVerBalance.resx">
+      <DependentUpon>FormVerBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVerRentas.resx">
+      <DependentUpon>FormVerRentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVerVentas.resx">
+      <DependentUpon>FormVerVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FromBase.resx">
+      <DependentUpon>FromBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\TicketAdeudo.rdlc" />
+    <EmbeddedResource Include="Reportes\TicketRenta.rdlc" />
+    <EmbeddedResource Include="Reportes\TicketVenta.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoprincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_transparente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_principal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_principal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onlinelogomaker-101417-1859-1318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
